@@ -22,7 +22,7 @@ mysql --version
 
 ---
 
-## 🗄️ Step 1: MySQL Database Setup
+## Step 1: MySQL Database Setup
 
 ### 1.1 Start MySQL Service
 
@@ -89,7 +89,7 @@ EXIT;
 
 ---
 
-## 🐍 Step 2: Flask Backend Setup
+## Step 2: Flask Backend Setup
 
 ### 2.1 Navigate to Backend Folder
 
@@ -288,7 +288,7 @@ You should see JSON data with user records.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 user-management-app/
@@ -338,7 +338,7 @@ python3 generate_data.py
 
 ---
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Issue: "Can't connect to MySQL server"
 **Solution:**
@@ -394,7 +394,7 @@ SELECT COUNT(*) FROM users;
 
 ---
 
-## 📊 Database Management
+## Database Management
 
 ### View All Users:
 ```sql
@@ -419,7 +419,7 @@ ALTER TABLE users AUTO_INCREMENT = 1;
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ### Python (Backend)
 - **Flask** - Web framework
@@ -489,9 +489,6 @@ db_user = os.getenv('DB_USER')
 - [ ] Search functionality working
 - [ ] Add user functionality working
 
----
-
-## 🎉 You're All Set!
 
 Your full-stack application is now ready. Start developing!
 
@@ -500,5 +497,3 @@ Your full-stack application is now ready. Start developing!
 - Check Frontend: http://localhost:5173
 - Check Flask Logs: Terminal 1
 - Check Browser Console: F12 in browser
-
-Happy coding! 🚀
