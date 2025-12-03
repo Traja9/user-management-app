@@ -97,7 +97,7 @@ export default function App() {
     }
 
     try {
-      const response = await fetch('http://localhost:5001/users', {
+      const response = await fetch('https://Savan9900990099.pythonanywhere.com/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
