@@ -172,5 +172,13 @@ def add_user():
         print(f"Error in POST /users: {e}")
         return jsonify({"error": str(e)}), 500
 
+def get_db_connection():
+    return mysql.connector.connect(
+        host="Savan9900990099.mysql.pythonanywhere-services.com",
+        user="Savan9900990099$myuser",
+        password="mypassword",
+        database="Savan9900990099$mydb"
+    )
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
