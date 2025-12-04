@@ -26,7 +26,7 @@ export default function App() {
   const fetchUsers = async (nextCursor = null) => {
     try {
       setLoading(true);
-      let url = `http://localhost:5001/users?limit=${limit}`;
+      let url = `http://Savan9900990099.pythonanywhere.com/users?limit=${limit}`;
       
       if (nextCursor) {
         url += `&cursor=${nextCursor}`;
@@ -65,7 +65,7 @@ export default function App() {
     try {
       setSearchLoading(true);
       const response = await fetch(
-        `http://localhost:5001/search?q=${encodeURIComponent(value)}&limit=10`
+        `http://Savan9900990099.pythonanywhere.com/search?q=${encodeURIComponent(value)}&limit=10`
       );
       const data = await response.json();
       setSuggestions(data.results);
